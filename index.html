@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💸 Dompet Imutku</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>💸 Dompet Imutku 💖</h1>
+    <div class="tabs">
+      <button class="tab active" onclick="gantiTab('catat')">📝 Catat</button>
+      <button class="tab" onclick="gantiTab('grafik')">📊 Grafik</button>
+    </div>
+    <div id="catat" class="tab-content active">
+      <div class="saldo-card"><div>Sisa Uang Kamu</div><div class="saldo">Rp <span id="totalSaldo">0</span></div></div>
+      <div class="box">
+        <input type="date" id="tanggal"><input type="text" id="keterangan" placeholder="✨ Keterangan">
+        <input type="number" id="jumlah" placeholder="💰 Jumlah">
+        <select id="jenis"><option value="pemasukan">💚 Pemasukan</option><option value="pengeluaran">❤️ Pengeluaran</option></select>
+        <div class="row"><select id="kategori"></select><button class="btn-kecil" onclick="tambahKategori()">➕</button></div>
+        <button onclick="tambahData()">➕ Simpan Transaksi</button>
+      </div>
+      <h3>📒 Riwayat</h3><div id="riwayat"></div>
+    </div>
+    <div id="grafik" class="tab-content"><div class="box"><h3>📊 Pengeluaran per Kategori</h3><canvas id="chartKategori"></canvas></div></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
