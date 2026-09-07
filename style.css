@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+* { font-family: 'Poppins', sans-serif; box-sizing: border-box; }
+body { background: linear-gradient(135deg, #FF9A9E 0%, #FAD0C4 100%); min-height: 100vh; padding: 20px; margin: 0; }
+.container { max-width: 500px; margin: 0 auto; } h1 { color: white; text-align: center; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+.tabs { display: flex; background: white; border-radius: 20px; padding: 5px; margin-bottom: 20px; }
+.tab { flex: 1; padding: 12px; border: none; background: none; border-radius: 15px; font-weight: 600; cursor: pointer; }
+.tab.active { background: linear-gradient(90deg, #FF9A9E, #FECFEF); color: white; }
+.tab-content { display: none; } .tab-content.active { display: block; }
+.saldo-card, .box { background: white; border-radius: 25px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 20px; }
+.saldo { font-size: 32px; font-weight: 700; color: #FF6B6B; text-align: center; }
+input, select { width: 100%; padding: 14px; border: 2px solid #FAD0C4; border-radius: 15px; font-size: 16px; margin: 8px 0; }
+.row { display: flex; gap: 10px; } .row button { width: auto; padding: 14px 20px; }
+button { width: 100%; padding: 16px; border: none; border-radius: 15px; background: linear-gradient(90deg, #FF9A9E, #FECFEF); color: white; font-size: 18px; font-weight: 600; cursor: pointer; }
+button.btn-kecil { background: #A1EAF1; font-size: 14px; padding: 10px; }
+.item { background: #FFF8F8; padding: 15px; margin: 10px 0; border-radius: 15px; border-left: 5px solid #FF9A9E; }
+.item-header { display: flex; justify-content: space-between; }
+.pemasukan { color: #4CAF50; font-weight: 700; } .pengeluaran { color: #F44336; font-weight: 700; }
+.kategori { font-size: 12px; background: #FAD0C4; padding: 3px 10px; border-radius: 10px; }
+canvas { background: white; border-radius: 20px; padding: 15px; } h3 { color:white; text-align:center; }
